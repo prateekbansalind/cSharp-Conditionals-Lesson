@@ -110,6 +110,24 @@ namespace ConsoleUI
 
 
 
+            // switch statment
+
+            Console.WriteLine("what is your pet's name: ");
+            string petName = Console.ReadLine();
+
+            switch (petName.ToLower())
+            {
+                case "tom":
+                    Console.WriteLine($"Hello {petName}");
+                    break;
+                case "rick":
+                    Console.WriteLine($"Hello {petName}, my boy");
+                    break;
+                default:
+                    Console.WriteLine("I don't know you.");
+                    break;
+            }
+
 
             Console.WriteLine("Application Done!");
 
